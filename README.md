@@ -1,4 +1,4 @@
-## parallel_computation
+## Parallel Computation
 OpenMP with C/C++ language 
 
 

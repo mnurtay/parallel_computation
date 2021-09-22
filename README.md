@@ -1,5 +1,5 @@
 ## Parallel Computation
-OpenMP with C/C++ language 
+OpenMP with C/C++ on XCode Platform
 
 
 1. Install clang-omp using homebrew:

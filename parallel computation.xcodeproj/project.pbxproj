@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		422A309F26FA1CD000F859D8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 422A309E26FA1CD000F859D8 /* main.c */; };
 		422A30A726FA204D00F859D8 /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A30A626FA204D00F859D8 /* libomp.dylib */; };
+		422F53332701FE4000497AA6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 422F53322701FE4000497AA6 /* main.c */; };
+		422F533D2702005D00497AA6 /* pragma_for.c in Sources */ = {isa = PBXBuildFile; fileRef = 422F533C2702005D00497AA6 /* pragma_for.c */; };
+		422F53402702026A00497AA6 /* available_threads.c in Sources */ = {isa = PBXBuildFile; fileRef = 422F533F2702026A00497AA6 /* available_threads.c */; };
+		422F53442702067900497AA6 /* matrix_multiplication.c in Sources */ = {isa = PBXBuildFile; fileRef = 422F53432702067900497AA6 /* matrix_multiplication.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +28,14 @@
 
 /* Begin PBXFileReference section */
 		422A309B26FA1CD000F859D8 /* parallel computation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "parallel computation"; sourceTree = BUILT_PRODUCTS_DIR; };
-		422A309E26FA1CD000F859D8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		422A30A626FA204D00F859D8 /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = ../../../../usr/local/Cellar/libomp/12.0.1/lib/libomp.dylib; sourceTree = "<group>"; };
+		422F53322701FE4000497AA6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		422F533B2702005D00497AA6 /* pragma_for.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pragma_for.h; sourceTree = "<group>"; };
+		422F533C2702005D00497AA6 /* pragma_for.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pragma_for.c; sourceTree = "<group>"; };
+		422F533E2702026A00497AA6 /* available_threads.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = available_threads.h; sourceTree = "<group>"; };
+		422F533F2702026A00497AA6 /* available_threads.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = available_threads.c; sourceTree = "<group>"; };
+		422F53422702067900497AA6 /* matrix_multiplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix_multiplication.h; sourceTree = "<group>"; };
+		422F53432702067900497AA6 /* matrix_multiplication.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = matrix_multiplication.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +70,9 @@
 		422A309D26FA1CD000F859D8 /* parallel computation */ = {
 			isa = PBXGroup;
 			children = (
-				422A309E26FA1CD000F859D8 /* main.c */,
+				422F53412702064A00497AA6 /* lab_2 */,
+				42BE8BC226FB7A0F00C45B95 /* example */,
+				422F53322701FE4000497AA6 /* main.c */,
 			);
 			path = "parallel computation";
 			sourceTree = "<group>";
@@ -72,6 +83,26 @@
 				422A30A626FA204D00F859D8 /* libomp.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		422F53412702064A00497AA6 /* lab_2 */ = {
+			isa = PBXGroup;
+			children = (
+				422F53422702067900497AA6 /* matrix_multiplication.h */,
+				422F53432702067900497AA6 /* matrix_multiplication.c */,
+			);
+			path = lab_2;
+			sourceTree = "<group>";
+		};
+		42BE8BC226FB7A0F00C45B95 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				422F533B2702005D00497AA6 /* pragma_for.h */,
+				422F533C2702005D00497AA6 /* pragma_for.c */,
+				422F533E2702026A00497AA6 /* available_threads.h */,
+				422F533F2702026A00497AA6 /* available_threads.c */,
+			);
+			path = example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				422A309F26FA1CD000F859D8 /* main.c in Sources */,
+				422F53402702026A00497AA6 /* available_threads.c in Sources */,
+				422F53332701FE4000497AA6 /* main.c in Sources */,
+				422F53442702067900497AA6 /* matrix_multiplication.c in Sources */,
+				422F533D2702005D00497AA6 /* pragma_for.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421AED44271EFE140006EFC4 /* poisson.c in Sources */ = {isa = PBXBuildFile; fileRef = 421AED43271EFE140006EFC4 /* poisson.c */; };
 		422A30A726FA204D00F859D8 /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A30A626FA204D00F859D8 /* libomp.dylib */; };
 		422F53332701FE4000497AA6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 422F53322701FE4000497AA6 /* main.c */; };
 		422F533D2702005D00497AA6 /* pragma_for.c in Sources */ = {isa = PBXBuildFile; fileRef = 422F533C2702005D00497AA6 /* pragma_for.c */; };
 		422F53402702026A00497AA6 /* available_threads.c in Sources */ = {isa = PBXBuildFile; fileRef = 422F533F2702026A00497AA6 /* available_threads.c */; };
 		422F53442702067900497AA6 /* matrix_multiplication.c in Sources */ = {isa = PBXBuildFile; fileRef = 422F53432702067900497AA6 /* matrix_multiplication.c */; };
+		423CDFE4270B565D00AC16AD /* sorting_algorithm.c in Sources */ = {isa = PBXBuildFile; fileRef = 423CDFE3270B565D00AC16AD /* sorting_algorithm.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		421AED42271EFE140006EFC4 /* poisson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = poisson.h; sourceTree = "<group>"; };
+		421AED43271EFE140006EFC4 /* poisson.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = poisson.c; sourceTree = "<group>"; };
 		422A309B26FA1CD000F859D8 /* parallel computation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "parallel computation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		422A30A626FA204D00F859D8 /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = ../../../../usr/local/Cellar/libomp/12.0.1/lib/libomp.dylib; sourceTree = "<group>"; };
 		422F53322701FE4000497AA6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		422F533F2702026A00497AA6 /* available_threads.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = available_threads.c; sourceTree = "<group>"; };
 		422F53422702067900497AA6 /* matrix_multiplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix_multiplication.h; sourceTree = "<group>"; };
 		422F53432702067900497AA6 /* matrix_multiplication.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = matrix_multiplication.c; sourceTree = "<group>"; };
+		423CDFE2270B565D00AC16AD /* sorting_algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sorting_algorithm.h; sourceTree = "<group>"; };
+		423CDFE3270B565D00AC16AD /* sorting_algorithm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sorting_algorithm.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421AED41271EFDF60006EFC4 /* lab_4 */ = {
+			isa = PBXGroup;
+			children = (
+				421AED42271EFE140006EFC4 /* poisson.h */,
+				421AED43271EFE140006EFC4 /* poisson.c */,
+			);
+			path = lab_4;
+			sourceTree = "<group>";
+		};
 		422A309226FA1CD000F859D8 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +85,8 @@
 		422A309D26FA1CD000F859D8 /* parallel computation */ = {
 			isa = PBXGroup;
 			children = (
+				421AED41271EFDF60006EFC4 /* lab_4 */,
+				423CDFE1270B561600AC16AD /* lab_3 */,
 				422F53412702064A00497AA6 /* lab_2 */,
 				42BE8BC226FB7A0F00C45B95 /* example */,
 				422F53322701FE4000497AA6 /* main.c */,
@@ -92,6 +109,15 @@
 				422F53432702067900497AA6 /* matrix_multiplication.c */,
 			);
 			path = lab_2;
+			sourceTree = "<group>";
+		};
+		423CDFE1270B561600AC16AD /* lab_3 */ = {
+			isa = PBXGroup;
+			children = (
+				423CDFE2270B565D00AC16AD /* sorting_algorithm.h */,
+				423CDFE3270B565D00AC16AD /* sorting_algorithm.c */,
+			);
+			path = lab_3;
 			sourceTree = "<group>";
 		};
 		42BE8BC226FB7A0F00C45B95 /* example */ = {
@@ -165,6 +191,8 @@
 				422F53332701FE4000497AA6 /* main.c in Sources */,
 				422F53442702067900497AA6 /* matrix_multiplication.c in Sources */,
 				422F533D2702005D00497AA6 /* pragma_for.c in Sources */,
+				423CDFE4270B565D00AC16AD /* sorting_algorithm.c in Sources */,
+				421AED44271EFE140006EFC4 /* poisson.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

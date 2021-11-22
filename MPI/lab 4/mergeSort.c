@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
     height = log2(numProcs);
 
     // if process 0, allocate memory for global array and fill with values
-    if (id==0){
+    if (id==0) {
 		globalArray = (int*) malloc (globalArraySize * sizeof(int));
 		fillArray(globalArray, globalArraySize, id);
 	}
@@ -43,16 +43,14 @@ int main(int argc, char** argv) {
 			id, numProcs, myHostName, zeroTotalTime);
 	} else {
 		processStartTime = MPI_Wtime();
-	        mergeSort(height, id, localArray, localArraySize, MPI_COMM_WORLD, NULL);
+	    mergeSort(height, id, localArray, localArraySize, MPI_COMM_WORLD, NULL);
 		processTotalTime = MPI_Wtime() - processStartTime;
-		printf("Process #%d of %d on %s took %f seconds \n", 
-			id, numProcs, myHostName, processTotalTime);
+		printf("Process #%d of %d on %s took %f seconds \n", id, numProcs, myHostName, processTotalTime);
 	}
 
     //End timing
     localTime = MPI_Wtime() - startTime;
-    MPI_Reduce(&localTime, &totalTime, 1, MPI_DOUBLE,
-        MPI_MAX, 0, MPI_COMM_WORLD);
+    MPI_Reduce(&localTime, &totalTime, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
 
     if (id == 0) {
 		printf("Sorting %d integers took %f seconds \n", globalArraySize,totalTime);

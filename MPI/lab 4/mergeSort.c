@@ -1,3 +1,6 @@
+// Nurtay Maksat
+// MKM - 203M
+
 int main(int argc, char** argv) {
     int numProcs, id, globalArraySize, localArraySize, height;
     int *localArray, *globalArray;
